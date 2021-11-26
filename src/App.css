@@ -5,16 +5,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
 }
-.toggle{
-    padding:20px;
-}
 .dark-mode {
     color: tomato;
     background-color: #0f2027;
     opacity: 1;
 }
 .light-mode{
-    color: #1f2633;
+    color: #1f2633 !important;
     background-color: tomato;
 }
 .dark-modeTop {
@@ -24,4 +21,9 @@ body{
 .light-modeTop {
     background-color: #fafafa;
     color: #000000;
+}
+@media only screen and (max-width:425px) {
+    .intro-text {
+        font-size: 18px;
+    }
 }

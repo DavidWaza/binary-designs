@@ -6,3 +6,20 @@ a:hover {
     transition: all 0.6 ease-in-out;
     
 }
+.navbar-light .navbar-brand{
+    color: tomato !important;
+}
+.navbar-toggler {
+    border-color: tomato !important;
+}
+.nav-link {
+    color: tomato !important;
+}
+.btn-outline-success{
+    background-color: tomato !important;
+    color: white !important;
+    border: none !important
+}
+.offcanvas-body {
+    background-color: #0f2027 !important;
+}

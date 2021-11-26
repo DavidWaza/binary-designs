@@ -1,5 +1,14 @@
+:root {
+    --fs--xl: 5rem;
+    --fs-600:2rem;
+    --fs-500:1rem;
+    --fs-400:400;
+
+}
+
 .offer__superText{
-    font-weight:600;
+    font-size: var(--fs-600);
+    font-weight: 800;
 }
 .top__facilities{
     letter-spacing: 2px;
@@ -7,9 +16,6 @@
 .review {
     color: grey;
     letter-spacing: 2px;
-    flex-wrap: wrap;
-    flex-grow: 0;
-    flex-shrink: 1;
 }
 .btn-link {
     background-color: black;

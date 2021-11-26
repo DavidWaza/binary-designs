@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { NavBar } from "./component/NavBar";
+import  NavBar from "./component/NavBar";
 import HeroSection from "./HeroSection";
 import Offer from "./Offer";
 import PhotoLink from "./PhotoLink";
-import TextBrand from "./TextBrand";
 
 function App() {
   const [darkMode, setDarkMode] = useState(
@@ -33,11 +32,11 @@ function App() {
             darkMode === "LightMode" ? "dark-modeTop" : "light-modeTop"
           }`}
         >
-          <div className="px-12 intro-text">
-            <h1>BINARY CONSOLIDATE</h1>
+          <div className=" px-9 intro-text">
+            <h3 >BINARY CONSOLIDATE</h3>
           </div>
           <div className="px-12 text-center"></div>
-          <button onClick={toggleMode} className="ml-auto">
+          <button onClick={toggleMode} className="ml-auto toggle-btn">
             {darkMode}
           </button>
         </div>
@@ -47,11 +46,9 @@ function App() {
           darkMode === "LightMode" ? "dark-mode" : "light-mode"
         }`}
       >
-        <NavBar />
+        <NavBar className="Navbar"/>
       </nav>
-      <HeroSection />
       <Offer className={darkMode}/>
-      <TextBrand />
       <PhotoLink />
     </>
   );

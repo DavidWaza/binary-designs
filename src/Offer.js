@@ -45,13 +45,13 @@ const Offer = ({ darkMode }) => {
       >
         <div className="grid lg:grid-cols-2 sm:grid-cols-12 md:grid-cols-12 gap-4 px-12 center ">
           <div style={whiteStyle} className="animate__animated animate__slideInDown m-12">
-            <h1 className="px-10 my-5 text-3xl capitalize offer__superText ">
+            <h1 className="px-10 my-5 capitalize offer__superText ">
               What we are <br />
               offering.
             </h1>
-            <p className="px-10 top__facilities">{data[0]}</p>
-            <p className="px-10 my-5 review">{data[1]}</p>
-            <button className="mx-9 btn-link">know more</button>
+            <p className="px-10 top__facilities ">{data[0]}</p>
+            <p className="px-10 py-10 review">{data[1]}</p>
+            <button className="mx-10 btn-link">know more</button>
           </div>
           <div style={blackStyleTwo} className="animate__animated animate__slideInUp w-full">
             <img
@@ -75,7 +75,7 @@ const Offer = ({ darkMode }) => {
             </h1>
             <p className="px-10 top__facilities">{data[3]}</p>
             <p className="px-10 my-5 review">{data[4]}</p>
-            <button className="mx-9 btn-link">know more</button>
+            <button className="mx-9 btn-link" variant="primary">know more</button>
           </div>
         </div>
       </div>
