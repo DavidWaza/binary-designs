@@ -1,0 +1,27 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+.toggle{
+    padding:20px;
+}
+.dark-mode {
+    color: tomato;
+    background-color: #0f2027;
+    opacity: 1;
+}
+.light-mode{
+    color: #1f2633;
+    background-color: tomato;
+}
+.dark-modeTop {
+    background-color: #000000;
+    color: #fafafa;
+}
+.light-modeTop {
+    background-color: #fafafa;
+    color: #000000;
+}

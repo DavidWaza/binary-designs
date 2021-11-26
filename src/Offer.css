@@ -1,0 +1,24 @@
+.offer__superText{
+    font-weight:600;
+}
+.top__facilities{
+    letter-spacing: 2px;
+}
+.review {
+    color: grey;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.btn-link {
+    background-color: black;
+    width: 50%;
+    height: 50px;
+    padding: 12px;
+    color: white;
+}
+.btn-link:hover {
+    background-color: #cfa2ab;
+    color: black;
+}
