@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import  NavBar from "./component/NavBar";
-import HeroSection from "./HeroSection";
 import Offer from "./Offer";
 import PhotoLink from "./PhotoLink";
 
