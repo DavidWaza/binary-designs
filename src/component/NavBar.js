@@ -16,7 +16,7 @@ const NavBar = () => {
     <>
       <Navbar expand={false}>
         <Container>
-          <Navbar.Brand href="#" className="NavBar">
+          <Navbar.Brand className="NavBar">
             Menu
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />

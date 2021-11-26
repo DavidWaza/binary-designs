@@ -6,7 +6,7 @@
 }
 .overlay {
     position:relative;
-    top:-12px;
+    top:-20px;
     background: linear-gradient(to left, rgb(31, 30, 30), rgb(27, 27, 27) 50%, #000000 75%, #000000 75%);;
     opacity: 0.8;
     width: 100%;
@@ -108,6 +108,14 @@
         z-index: 999;
         width: 280px;
     }
+    .overlay {
+        position:relative;
+        top:-40px;
+        background: linear-gradient(to left, rgb(31, 30, 30), rgb(27, 27, 27) 50%, #000000 75%, #000000 75%);;
+        opacity: 0.8;
+        width: 100%;
+        height: 70vh;
+    }
 }
 
 @media screen and (max-width:320px){
@@ -139,6 +147,44 @@
         width: 280px;
     }
 }
+@media screen and (max-width:375px){
+    .hero-text {
+        font-family: 'Anton', sans-serif;
+        font-size: 40px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: white;
+        font-size: 28px;
+        padding: 50px;
+        opacity: 1;
+    }
+    .subtext {
+        font-size: 16px;
+        padding-top: -19px;
+        word-wrap: break-word;
+        word-spacing: 2px;
+        letter-spacing: 2px;
+        color: white;
+    }
+    .btn-explore{
+        position: absolute;
+        top: 600px;
+        padding: 18px;
+        color: white;
+        background-color: black;
+        z-index: 999;
+        width: 280px;
+    }
+    .overlay {
+        position:relative;
+        top:-40px;
+        background: linear-gradient(to left, rgb(31, 30, 30), rgb(27, 27, 27) 50%, #000000 75%, #000000 75%);;
+        opacity: 0.8;
+        width: 100%;
+        height: 70vh;
+    }
+}
+
 .animate__animated.animate__slideInLeft {
     --animation-duration: 5s ;
 }
@@ -152,7 +198,7 @@
     position: absolute;
     width: 100%;
     height: 70vh;
-    top: 180px;
+    top: 240px;
     left: 0px;
     color: transparent;
     background-position: center;
