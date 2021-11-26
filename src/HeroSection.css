@@ -4,9 +4,13 @@
 .herosection-light {
     background-color: teal;
 }
+.container{
+    padding-right: 40px;
+    padding-left: 40px;
+}
 .overlay {
     position:relative;
-    top:-41px;
+    top:-18px;
     background: linear-gradient(to left, rgb(31, 30, 30), rgb(27, 27, 27) 50%, #000000 75%, #000000 75%);;
     opacity: 0.8;
     width: 100%;
@@ -29,7 +33,6 @@
     top:441px;
     margin-bottom: 20px;
     margin-top: -20px;
-    padding-left: 50px;
     font-size: 18px;
     word-wrap: break-word;
     word-spacing: 2px;
@@ -61,7 +64,6 @@
         text-transform: uppercase;
         color: white;
         font-size: 28px;
-        padding: 50px;
         opacity: 1;
     }
     .subtext {
