@@ -44,7 +44,7 @@ const Offer = ({ darkMode }) => {
         }`}
       >
        <section className="offer__section">
-        <div className="grid lg:grid-cols-2 sm:grid-cols-12 md:grid-cols-12 gap-4 px-3 center ">
+        <div className="grid lg:grid-cols-2 sm:grid-cols-12  gap-4 px-3 center ">
           <div style={whiteStyle} className="animate__animated animate__slideInDown m-12">
             <h1 className=" my-3 capitalize offer__superText ">
               What we are <br />
