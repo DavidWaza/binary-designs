@@ -43,14 +43,15 @@ const Offer = ({ darkMode }) => {
           darkMode === "LightMode" ? "dark-modeTop" : "light-modeTop"
         }`}
       >
-        <div className="grid lg:grid-cols-2 sm:grid-cols-12 md:grid-cols-12 gap-4 px-12 center ">
+       <section className="offer__section">
+        <div className="grid lg:grid-cols-2 sm:grid-cols-12 md:grid-cols-12 gap-4 px-3 center ">
           <div style={whiteStyle} className="animate__animated animate__slideInDown m-12">
-            <h1 className="px-10 my-5 capitalize offer__superText ">
+            <h1 className=" my-3 capitalize offer__superText ">
               What we are <br />
               offering.
             </h1>
-            <p className="px-10 top__facilities ">{data[0]}</p>
-            <p className="px-10 py-10 review">{data[1]}</p>
+            <p className=" top__facilities ">{data[0]}</p>
+            <p className=" py-7 review">{data[1]}</p>
             <button className="mx-10 btn-link">know more</button>
           </div>
           <div style={blackStyleTwo} className="animate__animated animate__slideInUp w-full">
@@ -61,6 +62,15 @@ const Offer = ({ darkMode }) => {
               className="transition duration-500 ease-in-out hover:bg-tomato-600 transform hover:-translate-y-1 hover:scale-105"
             />
           </div>
+          
+          <div style={whiteStyle} className="animate__animated animate__slideInUp m-12">
+            <h1 className=" my-5 text-3xl capitalize offer__superText ">
+              {data[2]}
+            </h1>
+            <p className="top__facilities">{data[3]}</p>
+            <p className=" review">{data[4]}</p>
+            <button className="mx-9 btn-link" variant="primary">know more</button>
+          </div>
           <div style={blackStyle}>
           <img
             src={Image6}
@@ -69,15 +79,8 @@ const Offer = ({ darkMode }) => {
             className=" transition duration-500 ease-in-out hover:bg-tomato-600 transform hover:-translate-y-1 hover:scale-105"
           />
           </div>
-          <div style={whiteStyle} className="animate__animated animate__slideInUp m-12">
-            <h1 className="px-10 my-5 text-3xl capitalize offer__superText ">
-              {data[2]}
-            </h1>
-            <p className="px-10 top__facilities">{data[3]}</p>
-            <p className="px-10 my-5 review">{data[4]}</p>
-            <button className="mx-9 btn-link" variant="primary">know more</button>
-          </div>
         </div>
+        </section>
       </div>
     </>
   );

@@ -53,6 +53,7 @@
     height: 70vh;
 }
 .hero-text {
+    padding-left: 20px;
     position: absolute;
     font-family: 'Anton', sans-serif;
     font-size: 40px;
@@ -66,9 +67,8 @@
 
 .subtext {
     position: absolute;
+    padding-right: 20px;
     top:441px;
-    padding-right: 50px;
-    padding-left: 50px;
     margin-bottom: 20px;
     margin-top: -20px;
     font-size: 18px;
@@ -98,11 +98,15 @@
     .hero-text {
         margin-top:28px;
         line-height: 48px;
+        overflow-wrap: break-word;
     }
     .subtext {
         margin-top: 26px;
         font-size: 16px;
         word-wrap: break-word;
+        width: 100%;
+        padding-left: 20px;
+        overflow-wrap: break-word;
     }
     .btn-explore{
         position: absolute;
