@@ -8,9 +8,45 @@
     padding-right: 40px;
     padding-left: 40px;
 }
+.hero__section li span {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    top: 240px;
+    left: 0px;
+    color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50% 50%;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnime 30s linear infinite 0s;
+}
+.hero__section li:nth-child(1) span {
+    background-image: url('./img/image1.jpg');
+}
+.hero__section li:nth-child(2) span {
+    background-image: url('./img/image2.jpg');
+    animation-delay: 6s;
+}
+.hero__section li:nth-child(3) span {
+    background-image: url('./img/image3.jpg');
+    animation-delay: 12s;
+}
+.hero__section li:nth-child(4) span {
+    background-image: url('./img/image4.jpg');
+    animation-delay: 18s;
+}
+@keyframes imageAnime {
+    0% {opacity: 0; animation-timing-function: ease-in;}
+    8% {opacity: 1; animation-timing-function: ease-out;}
+    17% {opacity: 1;}
+    25% {opacity: 0;}
+    100% {opacity: 0;}
+}
 .overlay {
-    position:relative;
-    top:-18px;
+    margin-top: -16px;
     background: linear-gradient(to left, rgb(31, 30, 30), rgb(27, 27, 27) 50%, #000000 75%, #000000 75%);;
     opacity: 0.8;
     width: 100%;
@@ -60,7 +96,8 @@
 
 @media screen and (max-width:700px){
     .hero-text {
-        margin-top:62px;
+        margin-top:28px;
+        line-height: 48px;
     }
     .subtext {
         margin-top: 26px;
@@ -73,8 +110,6 @@
         padding: 18px;
     }
     .overlay {
-        position:relative;
-        top:-11px;
         background: linear-gradient(to left, rgb(31, 30, 30), rgb(27, 27, 27) 50%, #000000 75%, #000000 75%);
         width: 100%;
     }
@@ -89,43 +124,7 @@
 .slideshow {
     list-style:none;
 }
-.hero__section li span {
-    position: absolute;
-    width: 100%;
-    height: 70vh;
-    top: 240px;
-    left: 0px;
-    color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: 50% 50%;
-    opacity: 0;
-    z-index: 0;
-    animation: imageAnime 30s linear infinite 0s;
-}
-.hero__section li:nth-child(1) span {
-    background-image: url('./img/image1.jpg');
-}
-.hero__section li:nth-child(2) span {
-    background-image: url('./img/image2.jpg');
-    animation-delay: 6s;
-}
-.hero__section li:nth-child(3) span {
-    background-image: url('./img/image3.jpg');
-    animation-delay: 12s;
-}
-.hero__section li:nth-child(4) span {
-    background-image: url('./img/image4.jpg');
-    animation-delay: 18s;
-}
-@keyframes imageAnime {
-    0% {opacity: 0; animation-timing-function: ease-in;}
-    8% {opacity: 1; animation-timing-function: ease-out;}
-    17% {opacity: 1;}
-    25% {opacity: 0;}
-    100% {opacity: 0;}
-}
+
 .hot__plate {
     text-align: center;
     color: black;
