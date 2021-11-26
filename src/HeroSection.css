@@ -44,8 +44,13 @@
     .btn-explore{
         height: auto;
         width: auto;
+        margin-top: 10px;
     }
     .text {
         font-weight: 600;
+        line-height: 50px;
+    }
+    .sub__text{
+        font-weight: 700;
     }
 }
