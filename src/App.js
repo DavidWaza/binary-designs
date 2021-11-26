@@ -32,8 +32,8 @@ function App() {
             darkMode === "LightMode" ? "dark-modeTop" : "light-modeTop"
           }`}
         >
-          <div className=" px-9 intro-text">
-            <h3 >BINARY CONSOLIDATE</h3>
+          <div className=" px-9 ">
+            <h3 className="intro-text">BINARY CONSOLIDATE</h3>
           </div>
           <div className="px-12 text-center"></div>
           <button onClick={toggleMode} className="ml-auto toggle-btn">
@@ -49,7 +49,7 @@ function App() {
         <NavBar className="Navbar"/>
       </nav>
       <HeroSection />
-      <Offer className={darkMode}/>
+      <Offer darkMode={darkMode}/>
       <PhotoLink />
     </>
   );

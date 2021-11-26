@@ -48,11 +48,12 @@ const Offer = ({ darkMode }) => {
           <div style={whiteStyle} className="animate__animated animate__slideInDown m-12">
             <h1 className=" my-3 capitalize offer__superText ">
               What we are <br />
-              offering.
             </h1>
             <p className=" top__facilities ">{data[0]}</p>
             <p className=" py-7 review">{data[1]}</p>
-            <button className="mx-10 btn-link">know more</button>
+            <button className={ ` mx-9 btn-link ${
+          darkMode === "LightMode" ? "dark-mode_btn" : "light-modeTop_btn"
+        }`}>know more</button>
           </div>
           <div style={blackStyleTwo} className="animate__animated animate__slideInUp w-full">
             <img
@@ -69,7 +70,9 @@ const Offer = ({ darkMode }) => {
             </h1>
             <p className="top__facilities">{data[3]}</p>
             <p className=" review">{data[4]}</p>
-            <button className="mx-9 btn-link" variant="primary">know more</button>
+            <button className={ ` mx-9 btn-link ${
+          darkMode === "LightMode" ? "dark-mode_btn" : "light-modeTop_btn"
+        }`}>know more</button>
           </div>
           <div style={blackStyle}>
           <img

@@ -1,24 +1,24 @@
-:root {
-    --fs--xl: 5rem;
-    --fs-600:2rem;
-    --fs-500:1rem;
-    --fs-400:400;
-
+body {
+    font-size: 16px;
 }
 .offer__section {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .offer__superText{
-    font-size: var(--fs-600);
     font-weight: 800;
 }
 .top__facilities{
     letter-spacing: 2px;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
 }
 .review {
     color: grey;
     letter-spacing: 2px;
+    font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+
 }
 .btn-link {
     background-color: black;
@@ -27,20 +27,24 @@
     padding: 12px;
     margin-left: 0;
     color: white;
+    text-decoration: none !important;
 }
 .btn-link:hover {
     background-color: #cfa2ab;
     color: black;
 }
+.dark-mode_btn{
+    background-color: #cfa2ab;
+    color: black !important;
+}
+.dark-mode_btn:hover {
+    background-color: #0f2027;
+    color: white !important;
+}
 @media screen and (max-width:700px){
     .btn-link {
         width: 70%;
         margin-top: 20px;
-
-    }
-    .offer__section {
-        margin-top: 40px;
-        margin-bottom: 40px;
     }
 
 .review {
