@@ -43,12 +43,13 @@
 @media screen and (max-width:700px) {
     .btn-explore{
         height: auto;
-        width: auto;
+        width: 100%;
         margin-top: 10px;
     }
     .text {
+        font-size: calc(30px + 6 * ((100vw - 320px) / 680));
         font-weight: 600;
-        line-height: 50px;
+        margin-top: auto;
     }
     .sub__text{
         font-weight: 700;
