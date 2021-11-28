@@ -4,6 +4,7 @@ import  NavBar from "./component/NavBar";
 import HeroSection from "./HeroSection";
 import Offer from "./Offer";
 import PhotoLink from "./PhotoLink";
+import Footer from "./Footer";
 
 function App() {
   const [darkMode, setDarkMode] = useState(
@@ -32,10 +33,10 @@ function App() {
             darkMode === "LightMode" ? "dark-modeTop" : "light-modeTop"
           }`}
         >
-          <div className=" px-9 ">
+          <div className="px-9 ">
             <h3 className="intro-text">BINARY CONSOLIDATE</h3>
           </div>
-          <div className="px-12 text-center"></div>
+          <div className="text-center"></div>
           <button onClick={toggleMode} className="ml-auto toggle-btn">
             {darkMode}
           </button>
@@ -51,6 +52,7 @@ function App() {
       <HeroSection />
       <Offer darkMode={darkMode}/>
       <PhotoLink />
+      <Footer />
     </>
   );
 }

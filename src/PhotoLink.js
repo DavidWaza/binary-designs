@@ -13,7 +13,7 @@ const PhotoLink = () => {
           products with us.
         </p>
         <div className=" flex grid lg:grid-cols-4 sm:grid-cols-12 gap-2 sm:w-full">
-          <div className=" image__context prophesie">
+         <div className=" image__context prophesie">
             <div className="overlay__two"></div>
             <h1 className="image__context-text">PROPHESIE</h1>
             <p className="image__context-subtext">pinotage</p>

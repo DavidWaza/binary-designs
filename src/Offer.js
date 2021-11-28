@@ -45,15 +45,15 @@ const Offer = ({ darkMode }) => {
       >
        <section className="offer__section">
         <div className="grid lg:grid-cols-2 sm:grid-cols-12  gap-4 px-3 center ">
-          <div style={whiteStyle} className="animate__animated animate__slideInDown m-12">
+          <div style={whiteStyle} className="animate__animated animate__slideInDown m-9">
             <h1 className=" my-3 capitalize offer__superText ">
               What we are <br />
             </h1>
             <p className=" top__facilities ">{data[0]}</p>
             <p className=" py-7 review">{data[1]}</p>
-            <button className={ ` mx-9 btn-link ${
+            <a href="/About-us"><button className={ ` btn-link ${
           darkMode === "LightMode" ? "dark-mode_btn" : "light-modeTop_btn"
-        }`}>know more</button>
+        }`}>know more</button></a>
           </div>
           <div style={blackStyleTwo} className="animate__animated animate__slideInUp w-full">
             <img
@@ -64,15 +64,15 @@ const Offer = ({ darkMode }) => {
             />
           </div>
           
-          <div style={whiteStyle} className="animate__animated animate__slideInUp m-12">
+          <div style={whiteStyle} className="animate__animated animate__slideInUp ">
             <h1 className=" my-5 text-3xl capitalize offer__superText ">
               {data[2]}
             </h1>
             <p className="top__facilities">{data[3]}</p>
             <p className=" review">{data[4]}</p>
-            <button className={ ` mx-9 btn-link ${
+            <a href="/About-us"><button className={ `  btn-link ${
           darkMode === "LightMode" ? "dark-mode_btn" : "light-modeTop_btn"
-        }`}>know more</button>
+        }`}>know more</button></a>
           </div>
           <div style={blackStyle}>
           <img

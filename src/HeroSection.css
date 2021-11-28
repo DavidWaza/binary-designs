@@ -42,8 +42,7 @@
 }
 @media screen and (max-width:700px) {
     .btn-explore{
-        height: auto;
-        width: 100%;
+        width: 70%;
         margin-top: 10px;
     }
     .text {
